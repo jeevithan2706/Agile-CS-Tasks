@@ -1,0 +1,15 @@
+.container{
+    width:600px;
+    margin:auto;
+    background-color: lightgray;
+    padding:20px;
+}
+.image{
+    min-width: 100px;
+    min-height: 150px;
+    position: absolute;
+    top: 100px;
+    right:350px;
+    width: 100px;
+    height: 150px;
+}

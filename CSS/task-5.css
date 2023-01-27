@@ -1,0 +1,23 @@
+.container{
+    width:600px;
+    margin:20px  auto;
+    background-color: black;
+    padding: 20px;
+}
+.numbers{
+    color:rgb(255,255,255);
+    margin: 2px auto;
+    letter-spacing: 20px;
+    opacity: 90%;
+}
+.bar{
+    width: 300px;
+    height: 10px;
+    background-color: hsl(169, 98%, 30%);
+    margin: 0% auto;
+    border-color:hsl(169, 98%, 30%) ;
+}
+h1{
+    text-align: center;
+}
+
