@@ -5,8 +5,17 @@ h1{
     font-family:local Bakery;
 }
 h2{
-    font-family:Akshar;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 h3{
-    font-family: Advent Pro;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -1,0 +1,65 @@
+.layout{
+    width: 800px;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 80%;
+}
+
+.first{
+    width: 10px;
+}
+.colon{
+    margin-right: 10px;
+}
+.canvas{
+    margin-top: 20px;
+}
+.tel-code{
+    width: 20px;
+}
+.tel-num{
+    width:119px ;
+}
+.inputs{
+    width: 150px;
+}
+.full-inputs{
+    width: 77%;
+}
+.right{
+    margin-left:150px;
+}
+.btn1{
+    margin-left: 167px;
+    background-color: rgb(77, 162, 247);
+    border:none;
+    box-shadow: 2px 2px 2px 2px rgb(77, 162, 247);
+}
+.btn{
+    margin-top: 10px;
+    width: 200px;
+    height:35px;
+    color: white;
+}
+.btn2{
+    margin-left: 10px;
+    background-color: rgb(255,127,0);
+    border: 0px;
+    box-shadow:2px 2px 2px 2px rgb(255,127,0);
+}
+.layout{
+    color: white;
+    font-weight: 300;
+}
+.colon-align{
+    margin-left: 2px;
+}
+.inputs,.full-inputs,.tel-code,.tel-num{
+    background-color: aqua;
+    border:2px solid white;
+    color: white;
+}
+body{
+    background-color: white;
+}
