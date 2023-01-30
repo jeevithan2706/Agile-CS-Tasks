@@ -9,11 +9,12 @@ body{
 .small-length{
     width: 30%;
     background-color: rgb(255,255,255);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 20px 0px 0px 20px;
 }
 .large-length{
     width: 70%;
     padding: 50px;
+    max-width: 70%;
 }
 .three-dots>hr{
     border: none;
@@ -29,6 +30,9 @@ body{
 .pink-dot{
     color:lightpink;
 }
+.green-dot{
+    color: rgb(0,255,127);
+}
 .cyan-dot{
     color: cyan;
 }
@@ -42,6 +46,9 @@ body{
     height: 50px;
     width: 100%; 
     margin-bottom: 40px;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 .question>hr{
     border: none;
@@ -50,11 +57,15 @@ body{
     width: 7%;
     max-width: 15px;
     min-width: 7px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .select-design{
     margin: 20px;
-    width:100%
+    width:100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .question{
     background-color: rgb(255,255,255);
@@ -64,25 +75,93 @@ body{
     padding-top: 1px;
     padding-bottom: 5px;
     margin-top: 15px;
-    margin-left: -10px;
-    margin-right: 20px;
     align-items: center;
+    display: inline-flex;
+    width: 97%;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: auto;
 }
-h1,h2{
+.large-length>h1,h2{
     color: rgb(255,255,255);
     margin: 5px;
 }
 h1{
     margin-bottom: 40px;
 }
-h2{
+.large-length>h2{
     margin-top: -20px;
-}
-.one{
-    display: inline-flex;
-    width: 97%;
-    vertical-align: middle;
 }
 .dot{
     margin-left: 5px;
+}
+input{
+    flex:auto;
+    justify-content: left;
+}
+.para{
+    opacity:40%;
+    margin-left: 10px;
+}
+span{
+    margin-left: 20%;
+}
+.image{
+    width:40%;
+    height: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+}
+.first-container{
+    margin:5%;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.top-head{
+    display:block;
+}
+h3:first-child{
+    color: gray;
+}
+h3:nth-child(2){
+    color:rgb(127,0,255);
+    font-size: 115%;
+}
+.bar{
+    width: 70%;
+    height: 3px;
+    background-color:rgb(127,0,255);
+    margin: 0% auto;
+    border-color:rgb(127,0,255) ;
+}
+input[type=checkbox]{
+    position: relative;
+}
+.task{
+    display:block;
+    margin-left: 10px;
+}
+.task>div>hr,p{
+    display: inline-flex;
+    vertical-align: middle;
+}
+hr{
+    border: none;
+    border-top: 12px dotted;
+    height: 1px;
+    width: 7%;
+    max-width: 15px;
+    min-width: 15px;
+    margin-right: 10px;
+}
+.task>div{
+    margin-left:20px;
+}
+.head4{
+    color: gray;
+}
+.hed{
+    margin-left: 10px;
+    margin-bottom: 10%;
 }
