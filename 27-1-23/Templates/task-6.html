@@ -3,10 +3,11 @@
     <head>
         <title>Form Layout</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width,initial-scale=1">
+        <meta name="viewport" content="width=devide-width,initial-scale=1.0">
         <link rel="stylesheet" href="/Agile-CS-Tasks/27-1-23/CSS/task-6.css">
     </head>
     <body>
+        <div class="background">
         <main>
             <header>
                 <center><h1>PRODUCT ORDER FORM</h1></center>
@@ -28,8 +29,8 @@
                     </div>
                     <div class="canvas">
                     <label for="phone">PHONE NUMBER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="colon">:</span>
-                        <input type="tel" id="phone" required class="tel-code" placeholder="??">
-                        <input type="tel" id="phone" required class="tel-num" placeholder="???????">
+                        <input type="tel" id="phone" pattern="[0-9]{2}" required class="tel-code" placeholder="??">
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}" required class="tel-num" placeholder="???????">
                     </label>
                 </div>
                 <div class="canvas inline">
@@ -64,6 +65,10 @@
                 </div>
                 </div>
             </header>
+            <footer class="foo">
+                <p>2017 Product Order Form.All Rights Reserved | Design by<span> JEEVI</span></p>
+            </footer>
         </main>
+    </div>
         </body>
         </html>

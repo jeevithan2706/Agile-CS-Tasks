@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(127,0,255);
+}
+.container{
+    display: inline-flex;
+    width: 100%;
+    background-color: rgb(127,0,255);
+}
+.small-length{
+    width: 30%;
+    background-color: rgb(255,255,255);
+    border-radius: 10px 0px 0px 10px;
+}
+.large-length{
+    width: 70%;
+    padding: 50px;
+}
+.three-dots>hr{
+    border: none;
+    border-top: 12px dotted;
+    height: 1px;
+    width: 7%;
+    display: inline-flex;
+    margin: 3px;
+    margin-top: 19px;
+    max-width: 15px;
+    min-width: 7px;
+}
+.pink-dot{
+    color:lightpink;
+}
+.cyan-dot{
+    color: cyan;
+}
+.yellow-dot{
+    color: rgb(255,255,0);
+}
+.three-dots{
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 50px;
+    width: 100%; 
+    margin-bottom: 40px;
+}
+.question>hr{
+    border: none;
+    border-top: 12px dotted;
+    height: 1px;
+    width: 7%;
+    max-width: 15px;
+    min-width: 7px;
+    margin-top: 20px;
+}
+.select-design{
+    margin: 20px;
+    width:100%
+}
+.question{
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 40px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-left: -10px;
+    margin-right: 20px;
+    align-items: center;
+}
+h1,h2{
+    color: rgb(255,255,255);
+    margin: 5px;
+}
+h1{
+    margin-bottom: 40px;
+}
+h2{
+    margin-top: -20px;
+}
+.one{
+    display: inline-flex;
+    width: 97%;
+    vertical-align: middle;
+}
+.dot{
+    margin-left: 5px;
+}

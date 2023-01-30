@@ -1,9 +1,14 @@
 .layout{
     width: 800px;
-    background-color: aqua;
+    background-color: rgba(52, 250, 210, 0.5);
     margin: 0 auto;
     padding: 20px;
-    opacity: 80%;
+    transition: inherit;
+    color: rgb(255,255,255);
+    font-weight: 300;
+}
+h1{
+    color: rgb(255,255,255);
 }
 
 .first{
@@ -32,34 +37,51 @@
 }
 .btn1{
     margin-left: 167px;
-    background-color: rgb(77, 162, 247);
+    background-color: rgba(77, 162, 247,0.5);
     border:none;
-    box-shadow: 2px 2px 2px 2px rgb(77, 162, 247);
+    box-shadow: 2px 2px 2px 2px rgba(77, 162, 247,0.5);
 }
 .btn{
     margin-top: 10px;
     width: 200px;
     height:35px;
     color: white;
+    transition: inherit;
 }
 .btn2{
     margin-left: 10px;
-    background-color: rgb(255,127,0);
+    background-color: rgba(255,127,0,0.5);
     border: 0px;
-    box-shadow:2px 2px 2px 2px rgb(255,127,0);
-}
-.layout{
-    color: white;
-    font-weight: 300;
+    box-shadow:2px 2px 2px 2px rgba(255,127,0,0.5);
 }
 .colon-align{
     margin-left: 2px;
 }
-.inputs,.full-inputs,.tel-code,.tel-num{
-    background-color: aqua;
-    border:2px solid white;
+input{
+    background-color:  rgba(52, 250, 210, 0.2);
+    border:1px solid rgb(255,255,255);
+    height:20px;
+    text-align: center;
     color: white;
 }
 body{
-    background-color: white;
+ background-repeat:repeat;
+ background-size: cover;
+ transition:ease-in-out;
+ background-image:url(/Agile-CS-Tasks/27-1-23/images/janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+
+}
+::placeholder{
+    color: white;
+}
+.foo
+{
+    color: rgb(255,255,255);
+    text-align: center;
+}
+span{
+    color:orangered;
+    font-weight: 300;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
