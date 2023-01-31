@@ -104,7 +104,8 @@ input{
     margin-left: 10px;
 }
 span{
-    margin-left: 20%;
+    margin-left: 53%;
+    position:absolute;
 }
 .image{
     width:40%;
@@ -136,7 +137,8 @@ h3:nth-child(2){
     border-color:rgb(127,0,255) ;
 }
 input[type=checkbox]{
-    position: relative;
+    position: absolute;
+    margin-left: 59%;
 }
 .task{
     display:block;
@@ -164,4 +166,17 @@ hr{
 .hed{
     margin-left: 10px;
     margin-bottom: 10%;
+}
+i{
+    margin-right: 3%;
+}
+.icon:hover{
+    color: lightcoral;
+}
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover i {
+    transform: scale(1.5);
 }
