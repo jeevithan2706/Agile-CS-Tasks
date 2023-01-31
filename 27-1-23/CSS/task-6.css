@@ -79,7 +79,7 @@ body{
     color: rgb(255,255,255);
     text-align: center;
 }
-span{
+.link{
     color:orangered;
     font-weight: 300;
     font-size: large;
