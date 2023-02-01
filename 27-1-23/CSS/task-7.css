@@ -1,22 +1,26 @@
-body{
-    background-color: rgb(127,0,255);
+body {
+    background-color: rgb(127, 0, 255);
 }
-.container{
+
+.container {
     display: inline-flex;
     width: 100%;
-    background-color: rgb(127,0,255);
+    background-color: rgb(127, 0, 255);
 }
-.small-length{
+
+.small-length {
     width: 30%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px 0px 0px 20px;
 }
-.large-length{
+
+.large-length {
     width: 70%;
     padding: 50px;
     max-width: 70%;
 }
-.three-dots>hr{
+
+.three-dots>hr {
     border: none;
     border-top: 12px dotted;
     height: 1px;
@@ -27,30 +31,36 @@ body{
     max-width: 15px;
     min-width: 7px;
 }
-.pink-dot{
-    color:lightpink;
+
+.pink-dot {
+    color: lightpink;
 }
-.green-dot{
-    color: rgb(0,255,127);
+
+.green-dot {
+    color: rgb(0, 255, 127);
 }
-.cyan-dot{
+
+.cyan-dot {
     color: cyan;
 }
-.yellow-dot{
-    color: rgb(255,255,0);
+
+.yellow-dot {
+    color: rgb(255, 255, 0);
 }
-.three-dots{
-    background-color: rgb(255,255,255);
+
+.three-dots {
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-left: 5px;
     height: 50px;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 40px;
     display: inline-flex;
     margin-left: auto;
     margin-right: auto;
 }
-.question>hr{
+
+.question>hr {
     border: none;
     border-top: 12px dotted;
     height: 1px;
@@ -60,15 +70,17 @@ body{
     margin-top: 10px;
     margin-right: 10px;
 }
-.select-design{
+
+.select-design {
     margin: 20px;
-    width:100%;
+    width: 100%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-.question{
-    background-color: rgb(255,255,255);
+
+.question {
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-left: 5px;
     height: 40px;
@@ -82,73 +94,92 @@ body{
     margin-left: 10px;
     margin-right: auto;
 }
-.large-length>h1,h2{
-    color: rgb(255,255,255);
+
+.large-length>h1,
+h2 {
+    color: rgb(255, 255, 255);
     margin: 5px;
 }
-h1{
+
+h1 {
     margin-bottom: 40px;
 }
-.large-length>h2{
+
+.large-length>h2 {
     margin-top: -20px;
 }
-.dot{
+
+.dot {
     margin-left: 5px;
 }
-input{
-    flex:auto;
+
+input {
+    flex: auto;
     justify-content: left;
 }
-.para{
-    opacity:40%;
+
+.para {
+    opacity: 40%;
     margin-left: 10px;
 }
-span{
+
+span {
     margin-left: 53%;
-    position:absolute;
+    position: absolute;
 }
-.image{
-    width:40%;
+
+.image {
+    width: 40%;
     height: 10%;
     margin-right: 10%;
     border-radius: 50%;
 }
-.first-container{
-    margin:5%;
+
+.first-container {
+    margin: 5%;
     display: inline-flex;
     align-items: center;
     margin-left: 10%;
 }
-.top-head{
-    display:block;
+
+.top-head {
+    display: block;
 }
-h3:first-child{
+
+h3:first-child {
     color: gray;
 }
-h3:nth-child(2){
-    color:rgb(127,0,255);
+
+h3:nth-child(2) {
+    color: rgb(127, 0, 255);
     font-size: 115%;
 }
-.bar{
+
+.bar {
     width: 70%;
     height: 3px;
-    background-color:rgb(127,0,255);
+    background-color: rgb(127, 0, 255);
     margin: 0% auto;
-    border-color:rgb(127,0,255) ;
+    border-color: rgb(127, 0, 255);
 }
-input[type=checkbox]{
+
+input[type=checkbox] {
     position: absolute;
     margin-left: 59%;
 }
-.task{
-    display:block;
+
+.task {
+    display: block;
     margin-left: 10px;
 }
-.task>div>hr,p{
+
+.task>div>hr,
+p {
     display: inline-flex;
     vertical-align: middle;
 }
-hr{
+
+hr {
     border: none;
     border-top: 12px dotted;
     height: 1px;
@@ -157,22 +188,28 @@ hr{
     min-width: 15px;
     margin-right: 10px;
 }
-.task>div{
-    margin-left:20px;
+
+.task>div {
+    margin-left: 20px;
 }
-.head4{
+
+.head4 {
     color: gray;
 }
-.hed{
+
+.hed {
     margin-left: 10px;
     margin-bottom: 10%;
 }
-i{
+
+i {
     margin-right: 3%;
 }
-.icon:hover{
+
+.icon:hover {
     color: lightcoral;
 }
+
 a i {
     transition: all 0.3s linear;
 }
