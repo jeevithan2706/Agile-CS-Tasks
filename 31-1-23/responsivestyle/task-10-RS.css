@@ -1,0 +1,49 @@
+@media screen and (max-width:500px) {
+    .frame{
+        width: 50%;
+    }
+    .frame *{
+        display: block;
+        width: 100%;
+        margin-top:10px;
+    }
+    .canvas1{
+        margin-top:-10px;
+    }
+    .canvas6{
+        margin-bottom: 2px;
+    }
+}
+@media  screen and (min-width:501px) and (max-width:767px) {
+    .frame{
+        width: 350px;
+        max-width: 350px;
+    }
+    .canvas3.canvas4 {
+        display: block;
+    }
+    .frame{
+        width: 100%;;
+    }
+    .container{
+        object-fit: cover;
+    }
+    .one{
+        width: 30%;
+    }
+    .canvas3,.canvas4{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .canvas3 * , .canvas4 * , .canvas5 *{
+        width: 100%;
+    }
+    .canvas5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap:10px;
+        column-gap:10px;
+    }
+    
+}
