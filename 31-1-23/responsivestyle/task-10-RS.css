@@ -1,6 +1,6 @@
 @media screen and (max-width:500px) {
     .frame{
-        width: 50%;
+        width: 200px;
     }
     .frame *{
         display: block;
