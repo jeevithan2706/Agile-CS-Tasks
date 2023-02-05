@@ -1,6 +1,50 @@
-@media only screen and (max-width:500px){
-    .main{
+@media only screen and (max-width:767px){
+    .grid-container{
         display: grid;
-        justify-content: center;
+        grid-template-areas:
+        'head head head head'
+        'right right right right'
+        'main main main main'
+        'one one one one '
+        'two two two two'
+        'three three three three'
+        'four four four four'
+        'five five five five';
+    }
+    .header{
+        gap:30%;
+    }
+    .right,.main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .card{
+        margin-left:60px ;
+        margin-right:60px ;
     }
 }
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'head head'
+        'right right'
+        'main main'
+        'one two'
+        'three four'
+        'five unset'
+         ;
+
+    }
+         .right,.main{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .card{
+            margin-left:60px ;
+            margin-right:60px ;
+        }
+        .header{
+            gap:50%;
+        }
+    }

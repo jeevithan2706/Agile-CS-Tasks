@@ -1,13 +1,13 @@
 :root{
     --background-color1:rgb(48, 47, 47);
+    --text-color1:rgb(255,255,255);
 }
-.head{
-    display: grid;
+.header{
+    display: inline-flex;
     grid-template-columns: 1fr 1fr;
     background-color: var(--background-color1);
-    color: white;
-    width: 100%;
-    position: sticky;
+    color: var(--text-color1);
+    gap: 70%;
 }
 .link{
     margin-top: 35px;
@@ -21,13 +21,38 @@
     margin-left: 10px;
     font-style: italic;
 }
-.right-body{
+.right{
     background-color: var(--background-color1);
-    float: right;
-    margin-top: 5px;
-    width: 20%;
-    color: white;
-    padding: 5px;
-    overflow:auto;
+    color: var(--text-color1);
+    padding: 20px;
 }
+.card{
+    border: 2px solid var(--background-color1);
+}
+.title{
+    background-color: var(--background-color1);
+    color: var(--text-color1);
+    margin-top: 0px;
+    height: 25px;
+}
+.para{
+    margin: 20px;
+}
+.header {grid-area: head;}
+.right {grid-area: right;}
+.main {grid-area: main;}
+.card-one{grid-area: one;}
+.card-two{grid-area: two;}
+.card-three{grid-area: three;}
+.card-four{grid-area: four;}
+.card-five{grid-area: five;}
 
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'head head head head'
+    'main main main right'
+    'one two three right'
+    'four five unset right';
+    gap:11px;
+}
