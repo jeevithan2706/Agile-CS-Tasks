@@ -1,0 +1,94 @@
+:root{
+    --redrose-color:rgb(255,0,127,0.6);
+}
+form{
+    display:grid;
+    grid-template-columns: 3fr;
+}
+hr{
+    color: var(--redrose-color);
+    transform: rotate(90deg);
+    height:40px;
+    border-color: var(--redrose-color);
+    margin-left: 21px;
+    margin-top: -30px;
+}
+.login-form{
+    width:300px;
+    height: 360px;
+    background-color: rgb(255,255,255);
+    padding: 70px;
+}
+.image{
+    width:450px;
+    
+}
+.container{
+    width: 800px;
+    position: absolute;
+    margin-left: 240px;
+    display: inline-flex;
+    margin-top: 30px;
+    
+}
+img{
+    width:400px;
+    height: auto;
+    object-fit: cover;
+}
+.upper{
+    position: absolute;
+    background-color: var(--redrose-color);
+    width:500px;
+    height:300px;
+    margin-left:771px;
+    margin-top:-10px ;
+}
+.lower
+{
+    position: absolute;
+    background-color: rgba(127,0,255,0.5);
+    width: 600px;
+    height:300px;
+    z-index: -1;
+    margin-top: 20%;
+    margin-left: -10px;
+}
+input,button{
+    border-radius: 10px 10px 10px 10px;
+    height: 20px;
+    margin: 5px;
+}
+button{
+    height: 30px;
+    background-color: var(--redrose-color);
+    border: 0px;
+}
+input[type=checkbox]{
+    vertical-align: middle;
+    margin-top: 2px;
+    height: 15px;
+    width: 15px;
+    
+}
+.link{
+    color: var(--redrose-color);
+    text-decoration: none;
+}
+input{
+    border: 2px solid gainsboro;
+}
+h4{
+    text-align: center;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-between;
+    margin-left: 50px;
+    padding: 10px;
+}
+i{
+    color: var(--redrose-color);
+    border-radius:0px;
+}

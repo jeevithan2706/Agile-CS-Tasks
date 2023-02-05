@@ -1,0 +1,33 @@
+:root{
+    --background-color1:rgb(48, 47, 47);
+}
+.head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-color1);
+    color: white;
+    width: 100%;
+    position: sticky;
+}
+.link{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.nav-bar{
+    display:inline-flex;
+    float: right;
+}
+.head-title{
+    margin-left: 10px;
+    font-style: italic;
+}
+.right-body{
+    background-color: var(--background-color1);
+    float: right;
+    margin-top: 5px;
+    width: 20%;
+    color: white;
+    padding: 5px;
+    overflow:auto;
+}
+
