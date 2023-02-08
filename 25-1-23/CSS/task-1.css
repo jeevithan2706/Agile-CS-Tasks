@@ -10,88 +10,88 @@
   background-color: lightgray;
 }
 
-.one {
+.red {
   width: 150px;
   height: 50px;
   background-color: red;
   margin-right: 10px;
 }
 
-.two {
+.blue {
   height: 50px;
   width: 340px;
   background-color: blue;
 
 }
 
-.canvas1 {
+.green {
   height: 100px;
   width: 100%;
   background-color: rgba(90, 87, 0, 0.801);
 
 }
 
-.three {
+.light-green {
   background-color: rgb(127, 255, 0);
   height: 50px;
   width: 160px;
   margin-right: 10px;
 }
 
-.four {
+.pink {
   background-color: rgb(255, 0, 255);
   height: 50px;
   width: 160px;
   margin-right: 10px;
 }
 
-.five {
+.violet {
   background-color: blueviolet;
   height: 50px;
   width: 160px;
 }
 
-.six {
+.orange {
   background-color: rgb(255, 127, 0);
   height: 60px;
   width: 245px;
   margin-right: 10px;
 }
 
-.seven {
+.yellow {
   background-color: rgb(255, 255, 0);
   height: 60px;
   width: 245px;
 }
 
-.eight {
+.dark-green {
   background-color: green;
   height: 25px;
   width: 117.5px;
   margin-right: 10px;
 }
 
-.nine {
+.cyan {
   height: 25px;
   width: 117.5px;
   background-color: rgba(0, 255, 255, 0.696);
   margin-right: 10px;
 }
 
-.ten {
+.brown {
   height: 25px;
   width: 117.5px;
   background-color: brown;
   margin-right: 10px;
 }
 
-.eleven {
+.dark-blue {
   height: 25px;
   width: 117.5px;
   background-color: rgb(0, 0, 255);
 }
 
-.canvas2 {
+.black {
   background-color: black;
   width: 100%;
   height: 10px;

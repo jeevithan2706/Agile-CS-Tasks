@@ -3,13 +3,14 @@
     margin: auto;
     background-color: lightgray;
     padding: 20px;
+    position: relative;
 }
 
 .image {
     min-width: 110px;
     min-height: 150px;
-    top: 120px;
-    right: 350px;
+    top: 14%;
+    left: 80%;
     width: 110px;
     height: 150px;
     position: absolute;

@@ -1,103 +1,105 @@
-.layout {
-    width: 800px;
-    background-color: rgba(52, 250, 210, 0.5);
-    margin: 0 auto;
-    padding: 20px;
-    transition: inherit;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
+*{
+    margin: 0%;
+    padding: 0%;
 }
-
+:root{
+    --white-color:rgb(255,255,255);
+}
 h1 {
-    color: rgb(255, 255, 255);
-}
-
-.first {
-    width: 10px;
-}
-
-.colon {
-    margin-right: 10px;
-}
-
-.canvas {
-    margin-top: 20px;
-}
-
-.tel-code {
-    width: 20px;
-}
-
-.tel-num {
-    width: 119px;
-}
-
-.inputs {
-    width: 150px;
-}
-
-.full-inputs {
-    width: 77%;
-}
-
-.right {
-    margin-left: 150px;
-}
-
-.btn1 {
-    margin-left: 167px;
-    background-color: rgba(77, 162, 247, 0.5);
-    border: none;
-    box-shadow: 2px 2px 2px 2px rgba(77, 162, 247, 0.5);
-}
-
-.btn {
-    margin-top: 10px;
-    width: 200px;
-    height: 35px;
-    color: white;
-    transition: inherit;
-}
-
-.btn2 {
-    margin-left: 10px;
-    background-color: rgba(255, 127, 0, 0.5);
-    border: 0px;
-    box-shadow: 2px 2px 2px 2px rgba(255, 127, 0, 0.5);
-}
-
-.colon-align {
-    margin-left: 2px;
-}
-
-input {
-    background-color: rgba(52, 250, 210, 0.2);
-    border: 1px solid rgb(255, 255, 255);
-    height: 20px;
+    letter-spacing: 1ch;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    color: white;
+    padding-top: 2%;
+    color: var(--white-color);
 }
-
-body {
-    background-repeat: repeat;
+body{
+    color: var(--white-color);
+    background-image: url("/Agile-CS-Tasks/27-1-23/images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    transition: ease-in-out;
-    background-image: url(/Agile-CS-Tasks/27-1-23/images/janko-ferlic-sfL_QOnmy00-unsplash.jpg);
-
+    width: 100%;
 }
-
-::placeholder {
-    color: white;
+label {
+    width: 20%;
+    display: inline-block;
 }
-
-.foo {
-    color: rgb(255, 255, 255);
-    text-align: center;
+.label-right{
+    margin-left: 10%;
 }
-
-.link {
+#container label {
+    letter-spacing: 1px;
+    margin-right: 1%;
+    padding: 2px;
+}
+#container {
+    border:1px solid var(--white-color);
+    width: 80%;
+    padding: 2%;
+    background-color: rgba(52, 250, 210, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+button{
+    margin: 1%;
+    width: 150px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0ch;
+    
+}
+a {
     color: orangered;
     font-weight: 300;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.5%;
+}
+button{
+    transition: inherit;
+    height: 5%;
+    width: 20%;
+}
+.btn-blue{
+    background-color: rgba(77, 162, 247, 0.5);
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(77, 162, 247, 0.5);
+    color:var(--white-color);
+    margin-left: 21%;
+}
+.btn-orange {
+    background-color: rgba(255, 127, 0, 0.5);
+    border: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 127, 0, 0.5);
+    color: var(--white-color);
+}
+ input{
+    margin: 1%;
+    color: var(--white-color);
+    background-color: rgba(30, 122, 104, 0.03);
+    border:1px solid var(--white-color);
+    padding: 2px;
+    width: 20%;
+}
+input::placeholder {
+    padding-left: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color:var(--white-color);
+}
+.address-input {
+    width: 75%;
+    padding-left: 0%;
+}
+.num-code {
+    width: 3%;
+}
+.num {
+    width: 15%;
+    margin-left: 4px;
 }

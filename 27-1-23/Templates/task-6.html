@@ -1,97 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Form Layout</title>
+    <link rel="stylesheet" href="/Tasks/25-01-23/task.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/Agile-CS-Tasks/27-1-23/CSS/task-6.css">
+    <meta name="viewport" content="width = devvice-width, initial-scale = 1.0">
+     <title>product order form</title>
 </head>
-
 <body>
-    <div class="background">
-        <main>
-            <header>
-                <center>
-                    <h1>PRODUCT ORDER FORM</h1>
-                </center>
-                <div class="layout">
-                    <div class="container">
-                        <form class="form-inline">
-                            <div class="canvas">
-                                <label for="firstname" class="">FIRST NAME
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
-                                        class="colon">:</span>
-                                    <input name="firstname" type="text" required class="inputs"
-                                        placeholder="Your First Name">
-                                </label>
-                                <label for="lastname" class="right">LAST NAME
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="text" name="lastname" required class="inputs"
-                                        placeholder="Your Last Name">
-                                </label>
-                            </div>
-                            <div class="canvas">
-                                <label for="email">EMAIL ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input id="email" type="text" required class="inputs" placeholder="MailExample.com">
-                                </label>
-                            </div>
-                            <div class="canvas">
-                                <label for="phone">PHONE NUMBER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="tel" id="phone" pattern="[0-9]{2}" required class="tel-code"
-                                        placeholder="??">
-                                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}" required
-                                        class="tel-num" placeholder="???????">
-                                </label>
-                            </div>
-                            <div class="canvas inline">
-                                <label for="billing">BILLING ADDRESS &nbsp;<span class="colon colon-align">:</span>
-                                    <input type="text" id="billing" class="full-inputs" placeholder="Billing Address">
-                                </label>
-                            </div>
-                            <div class="canvas inline">
-                                <label for="address">YOUR ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="text" id="address" class="full-inputs" placeholder="Your Address">
-                                </label>
-                            </div>
-                            <div class="canvas">
-                                <label for="city" class="">CITY
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="text" id="city" class="inputs" placeholder="Your City">
-                                </label>
-                                <label for="state" class="right">STATE/PROVINCE&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="text" id="state" class="inputs" placeholder="Your State or Province">
-                                </label>
-                            </div>
-                            <div class="canvas">
-                                <label for="zip" class="">ZIP
-                                    CODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon colon-align">:</span>
-                                    <input type="text" id="zip" class="inputs" placeholder="Zip Code">
-                                </label>
-                                <label for="country"
-                                    class="right">COUNTRY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="colon">:</span>
-                                    <input type="text" od="country" class="inputs" placeholder="Country">
-                                </label>
-                            </div>
-                            <button class="btn btn1" value="submit">PLACE ORDER</button>
-                            <button class="btn btn2" value="reset"> RESET</button>
-                        </form>
-                    </div>
-                </div>
-            </header>
-            <footer class="foo">
-                <p>2017 Product Order Form.All Rights Reserved | Design by<span class="link"> JEEVI</span></p>
-            </footer>
-        </main>
-    </div>
-</body>
+    <h1>PRODUCT ORDER FORM</h1>
+    <div id="container">
+        <form>
+            <label for="fname">
+                FIRST NAME </label>:<input id="fname" type="text" placeholder="Your First Name">
+            <label for="lname" class="label-right">
+                LAST NAME </label>:<input id="lname" type="text" placeholder="Your Last Name">
+            <br>
+            <label for="email">
+                EMAIL ADDRESS </label>:<input id="email" type="email" placeholder="mail@example.com">
+            <br>
+            <label for="phone num">
+                PHONE NUMBER </label>:<input id="phone" type="number" placeholder="+??" class="num-code"><input id="num"
+                type="number" placeholder="??????????" class="num">
+            <br>
+            <label for="billing-address">
+                BILLING ADDRESS </label>:<input id="billing-address" type="text" placeholder="Billing Address"
+                class="address-input">
+            <br>
+            <label for="your-address">
+                YOUR ADDRESS </label>:<input id="your-address" type="text" placeholder="Your Address"
+                class="address-input">
+            <br>
+            <label for="city">
+                CITY </label>:<input id="city" type="text" placeholder="Your City">
+            <label id="state" class="label-right">
+                STATE/PROVINCE</label>:<input id="state" type="text" placeholder="Your State or Province">
+            <br>
+            <label for="zip-code">
+                ZIP CODE </label>:<input id="zip-code" type="number" placeholder="Zip Code">
+            <label for="country" class="label-right">COUNTTY </label>:<input id="country" placeholder="Country"><br>
 
+            <button type="submit" value="PLACEORDER" class="btn-blue">PLACEORDER</button> <button type="reset"
+                value="RESET" class="btn-orange">RESET</button>
+        </form>
+    </div>
+    <footer>
+        @2017 Product Order Form.All Rights Reserved / Design by <a href="#"> W3Layouts</a>
+    </footer>
+</body>
 </html>

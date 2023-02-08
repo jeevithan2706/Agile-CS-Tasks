@@ -1,14 +1,27 @@
+:root{
+    --border-color1:lightgray;
+    --border-color2:black;
+}
 table {
-    border-top: 2px solid lightgray;
-    border-left: 2px solid lightgray;
+    border-top: 2px solid var(--border-color1);
+    border-left: 2px solid var(--border-color1);
     border-right: 2px solid rgb(2, 2, 2);
     border-bottom: 2px solid rgb(0, 0, 0);
+    width: 40%;
 }
 
 td,
 th {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+    border-top: 2px solid var(--border-color2);
+    border-left: 2px solid var(--border-color2);
+    border-right: 2px solid var(--border-color1);
+    border-bottom: 2px solid var(--border-color1);
+}
+.yellow{
+    background-color: rgba(255,255,0,0.5);
+}
+.violet{
+    background-color: rgba(127,0,255,0.5);
+}.green{
+    background-color: rgba(0,255,127,0.5);
 }
