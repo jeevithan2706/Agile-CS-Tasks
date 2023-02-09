@@ -25,3 +25,9 @@ th {
 }.green{
     background-color: rgba(0,255,127,0.5);
 }
+td{
+    text-align: center;
+}
+.day{
+    text-align: left;
+}

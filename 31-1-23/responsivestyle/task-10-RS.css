@@ -1,49 +1,33 @@
-@media screen and (max-width:500px) {
-    .frame{
-        width: 200px;
-    }
-    .frame *{
-        display: block;
-        width: 100%;
-        margin-top:10px;
+/* CSS for Tablet */
+@media only screen and (min-width:501px) and (max-width:768px) {
+    .container{
+        grid-template-rows: 90px 140px 90px 100px 60px 25px;
     }
     .canvas1{
-        margin-top:-10px;
-    }
-    .canvas6{
-        margin-bottom: 2px;
-    }
-}
-@media  screen and (min-width:501px) and (max-width:767px) {
-    .frame{
-        width: 350px;
-        max-width: 350px;
-    }
-    .canvas3.canvas4 {
-        display: block;
-    }
-    .frame{
-        width: 100%;;
-    }
-    .container{
-        object-fit: cover;
-    }
-    .one{
-        width: 30%;
-    }
-    .canvas3,.canvas4{
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 10px;
     }
-    .canvas3 * , .canvas4 * , .canvas5 *{
-        width: 100%;
+    .canvas3{
+        grid-template-columns: 1fr;
+    }
+    .canvas4{
+        grid-template-columns: 1fr;
     }
     .canvas5{
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap:10px;
-        column-gap:10px;
     }
-    
-}
+  }
+  /* CSS for Mobile */
+  @media only screen and (max-width:500px){
+    .container{
+        grid-template-rows: 90px 140px 90px 100px 180px 5px;
+        height: auto;
+    }
+    .canvas1,.canvas2,.canvas3,.canvas4,.canvas5,.canvas6{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .r1-c1,.r1-c2,.r2-c1,.r3-c1,.r3-c2,.r3-c3,.r4-c1,.r4-c2,.r5-c1,.r5-c2,.r5-c3,.r5-c4,.r6-c1{
+        width: 100%;
+    }
+  }

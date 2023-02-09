@@ -1,100 +1,71 @@
-.canvas1,.canvas3,.canvas4,.canvas5,.canvas2,.canvas6 {
-    display: inline-flex;
-  }
-  .canvas2,.canvas3,.canvas4,.canvas5,.canvas6{
-    margin-top: 5px;
-  }
-  
-  .frame {
-    width: 500px;
-    padding: 10px 20px;
-    margin: 20px auto;
-    background-color: lightgray;
-  }
-  
-  .one {
-    width: 150px;
-    height: 50px;
-    background-color: red;
-    margin-right: 10px;
-  }
-  
-  .two {
-    height: 50px;
-    width: 340px;
-    background-color: blue;
-  
-  }
-  
-  .canvas2 {
-    height: 100px;
-    width: 100%;
-    background-color: rgba(90, 87, 0, 0.801);
-  
-  }
-  
-  .three {
-    background-color: rgb(127, 255, 0);
-    height: 50px;
-    width: 160px;
-    margin-right: 10px;
-  }
-  
-  .four {
-    background-color: rgb(255, 0, 255);
-    height: 50px;
-    width: 160px;
-    margin-right: 10px;
-  }
-  
-  .five {
-    background-color: blueviolet;
-    height: 50px;
-    width: 160px;
-  }
-  
-  .six {
-    background-color: rgb(255, 127, 0);
-    height: 60px;
-    width: 245px;
-    margin-right: 10px;
-  }
-  
-  .seven {
-    background-color: rgb(255, 255, 0);
-    height: 60px;
-    width: 245px;
-  }
-  
-  .eight {
-    background-color: green;
-    height: 25px;
-    width: 117.5px;
-    margin-right: 10px;
-  }
-  
-  .nine {
-    height: 25px;
-    width: 117.5px;
-    background-color: rgba(0, 255, 255, 0.696);
-    margin-right: 10px;
-  }
-  
-  .ten {
-    height: 25px;
-    width: 117.5px;
-    background-color: brown;
-    margin-right: 10px;
-  }
-  
-  .eleven {
-    height: 25px;
-    width: 117.5px;
-    background-color: rgb(0, 0, 255);
-  }
-  
-  .canvas6 {
-    background-color: black;
-    width: 100%;
-    height: 10px;
-  }
+.container{
+  background-color: white;
+  display: grid;
+  grid-template-rows: 90px 140px 90px 100px 50px 25px;
+  gap: 10px;
+  width: 100%;
+}
+.canvas1{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 10px;
+  overflow: hidden;
+}
+.r1-c1{
+  background-color: red;
+}
+.r1-c2{
+  background-color: brown;
+}
+.canvas2{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: orange;
+}
+.canvas3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.r3-c1{
+  background-color: green;
+}
+.r3-c2{
+  background-color: pink;
+}
+.r3-c3{
+  background-color: darkolivegreen;
+}
+.canvas4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.r4-c1{
+  background-color: gray;
+}
+.r4-c2{
+  background-color: lawngreen;
+}
+.canvas5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.r5-c1{
+  background-color: darkgreen;
+}
+.r5-c2{
+  background-color: darkblue;
+}
+.r5-c3{
+  background-color: black;
+}
+.r5-c4{
+  background-color: blueviolet;
+}
+.canvas6{
+  display: grid;
+  gap: 10px;
+  background-color: yellow;
+}
