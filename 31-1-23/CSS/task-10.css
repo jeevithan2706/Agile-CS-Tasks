@@ -1,71 +1,83 @@
 .container{
   background-color: white;
   display: grid;
-  grid-template-rows: 90px 140px 90px 100px 50px 25px;
   gap: 10px;
   width: 100%;
 }
-.canvas1{
+.canvas-one{
   display: grid;
   grid-template-columns: 30% 70%;
   gap: 10px;
   overflow: hidden;
 }
-.r1-c1{
+.red{
   background-color: red;
+  height: 90px;
 }
-.r1-c2{
+.brown{
   background-color: brown;
+  height: 90px;
 }
-.canvas2{
+.canvas-two{
   display: grid;
   grid-template-columns: 1fr;
   background-color: orange;
+  height: 140px;
 }
-.canvas3{
+.canvas-three{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
-.r3-c1{
+.green-one{
   background-color: green;
+  height: 90px;
 }
-.r3-c2{
+.light-pink{
   background-color: pink;
+  height: 90px;
 }
-.r3-c3{
+.green-two{
   background-color: darkolivegreen;
+  height: 90px;
 }
-.canvas4{
+.canvas-four{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.r4-c1{
+.gray{
   background-color: gray;
+  height: 100px;
 }
-.r4-c2{
+.light-green{
   background-color: lawngreen;
+  height: 100px;
 }
-.canvas5{
+.canvas-five{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
-.r5-c1{
+.green-three{
   background-color: darkgreen;
+  height: 50px;
 }
-.r5-c2{
+.blue{
   background-color: darkblue;
+  height: 50px;
 }
-.r5-c3{
+.black{
   background-color: black;
+  height: 50px;
 }
-.r5-c4{
+.violet{
   background-color: blueviolet;
+  height: 50px;
 }
-.canvas6{
+.canvas-six{
   display: grid;
   gap: 10px;
   background-color: yellow;
+  height: 25px;
 }
