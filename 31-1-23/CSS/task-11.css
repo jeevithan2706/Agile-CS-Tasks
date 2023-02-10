@@ -30,9 +30,8 @@
     border: 2px solid var(--background-color1);
 }
 .title{
-    background-color: var(--background-color1);
     color: var(--text-color1);
-    margin-top: 0px;
+    margin-top:0;
     height: 25px;
 }
 .para{
@@ -55,4 +54,8 @@
     'one two three right'
     'four five unset right';
     gap:11px;
+}
+.card-title{
+    background-color: var(--background-color1);
+    height: 25%;
 }
