@@ -14,7 +14,7 @@ h1 {
 }
 body{
     color: var(--white-color);
-    background-image: url("/Agile-CS-Tasks/27-1-23/images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-image: url("../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
