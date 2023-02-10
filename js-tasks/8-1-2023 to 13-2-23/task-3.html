@@ -1,0 +1,21 @@
+<HTML>
+    <HEAD>
+      <TITLE>Sum</TITLE>
+
+      <script type="text/javascript">
+        function sum()
+        {
+           var p = document.my-form.value;
+           document.getElementById('text').innerHTML = p;
+        }
+      </script>
+    </HEAD>
+    <BODY>
+        <form name="my-form">
+            <input type="text" name="input-field">
+            <button onclick="sum()">get text</button>
+        </form>
+        <div id="text">
+        </div>
+    </BODY>
+</HTML>
