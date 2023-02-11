@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ritam</title>
+
+    <style>
+        #printchatbox {
+            background-color: #fff;
+            color: #6E6A6B;
+            font-size: 130%;
+            text-align: left;
+            border: 2px solid #ad4a63;
+            width: auto;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Printing the message on a div</h1>
+    <div id='printchatbox'></div>
+    <br>
+    <label for="fname">Type here : </label>
+    <input type='text' id='fname' class='chatinput' onkeydown="annotate()">
+
+    <script>function annotate() {
+            var typed = document.getElementById("fname").value;
+            document.getElementById("printchatbox").innerHTML = typed;
+        }
+    </script>
+</body>
+
+</html>

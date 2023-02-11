@@ -31,8 +31,9 @@
 }
 .title{
     color: var(--text-color1);
-    margin-top:0;
     height: 25px;
+    margin-top: 0%;
+    margin-left: 10px;
 }
 .para{
     margin: 20px;
