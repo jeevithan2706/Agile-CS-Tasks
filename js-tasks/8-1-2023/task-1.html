@@ -8,21 +8,20 @@
 </head>
 
 <body>
-    <form id="btn-form">
-        <button onclick="check()">A</button>
-        <button onclick="check()">B</button>
-        <button onclick="check()">C</button>
-        <button onclick="check()">D</button>
-    </form>
+        <button onclick="check(this)">A</button>
+        <button onclick="check(this)">B</button>
+        <button onclick="check(this)">C</button>
+        <button onclick="check(this)">D</button>
+    </body>
     <script>
-        let values = [...document.querySelectorAll('button')].map(el => el.textContent);
-        if ( values.textContent.match(/A/) == "A"){
-            alert(A);
-        }
-        else{
-            alert(B);
-        }
+        var values = "";
+        function check(elem){
+            var button = elem.innerHTML;
+            values = values.concat(button);
+            alert(values);
+        
+    }
     </script>
-</body>
+
 
 </html>

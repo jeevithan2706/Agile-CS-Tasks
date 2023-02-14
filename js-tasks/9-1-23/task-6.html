@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            p{
+                display: inline-flex;
+            }
+        </style>
+    </head>
 <body>
 <h1>HTML Style Object</h1>
 <h2>The backgroundColor Property</h2>
+<p>Red : <p id="red"></p></p><br>
+<p>Blue : <p id="blue"></p></p><br>
 
 <button type="button" onclick="myFunction()">Set background color</button>
 
 <script>
+    let colors = ["red","blue","pink","green","yellow","gray","cyan","lightgreen","lightblue","violet","black"];
+    let red = "";
+    var blue = "";
+    var pink = "";
+    var green = "";
+    
+
 function myFunction() {
- red = document.body.style.backgroundColor = "red";
- blue = document.body.style.backgroundColor = "blue";
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    let color = document.body.style.backgroundColor;
+    switch(color){
+     case "red":
+        red = red +1 ;
+        document.getElementById("red").innerHTML = red;
+    case "blue":
+        blue = blue.concat(+1);
+        document.getElementById("blue").innerHTML = blue;
+    }
 }
 </script>
 

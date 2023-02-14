@@ -5,33 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        button{
+            display: block;
+            height:30px;
+            margin-top: 10px;
+            width: 10%;
+        }
+    </style>
 </head>
 <body>
-    <button>Arun</button>
-    <button>Tharun</button>
-    <button>vignesh</button>
-    <button>Jeevi</button>
-    <button>Elango</button>
-    <button>yuvan</button>
-    <button>Inith</button>
-    <button>Ninja</button>
-    <button>Oviya</button>
-    <button onclick="findVowels()">Urban</button>
+    <button onclick="findVowels(this)">Arun</button>
+    <button onclick="findVowels(this)">Tharun</button>
+    <button onclick="findVowels(this)">vignesh</button>
+    <button onclick="findVowels(this)">Jeevi</button>
+    <button onclick="findVowels(this)">Elango</button>
+    <button onclick="findVowels(this)">yuvan</button>
+    <button onclick="findVowels(this)">Inith</button>
+    <button onclick="findVowels(this)">Ninja</button>
+    <button onclick="findVowels(this)">Oviya</button>
+    <button onclick="findVowels(this)">Urban</button>
     <script>
-        var names = [...document.querySelectorAll('button')].map(el => el.textContent);
-        console.log(names);
-        const Vowels = [a,e,i,o,u];
-        function findVowels(names,vowels) {
-            for( i = 0 ; i < names.Length ; i++){
-            if (names[i].charAt[0] == Vowels){
-                //document.getElementsByTagName('body')[0].c
-                document.body.style.backgroundColor = "red";
-            }
-            else {
-                document.body.style.backgroundColor = "green";
-            }
+        function findVowels(elem){
+        const name = elem.innerHTML;
+        const firstLetter = name.charAt(0);
+        const vowel = /[aeiou]/i;
+        if (vowel.test(firstLetter)) {
+            elem.style.backgroundColor="tomato";
+        } else {
+            elem.style.backgroundColor="lightgreen";
         }
-        } 
+    }
     </script>
 </body>
 </html>

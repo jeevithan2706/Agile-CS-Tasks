@@ -1,23 +1,28 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <TITLE>Sum</TITLE>
-  <script type="text/javascript">
-    function sum() {
-      var p = document.getElementById('input-field').value;
-      document.getElementById('display').innerHTML = p;
-      alert(p);
+  <title>Input</title>
+  <style>
+    label,input{
+      display: block;
     }
-  </script>
+  </style>
 </head>
 
 <body>
   <h2>Display the text from input</h2>
-  <form name="my-form">
-    <input type="text" id="input-field">
-    <button onclick="sum()">get text</button>
-  </form>
+    <input type="text" id="inputfield">
+    <button onclick="getfunction()">get text</button>
   <div id="display"></div>
+  <script>
+    function getfunction() {
+      var p = document.getElementById("inputfield").value;
+      document.getElementById("display").innerHTML = p;
+      alert(p);
+    }
+  </script>
 </body>
 
 </html>
