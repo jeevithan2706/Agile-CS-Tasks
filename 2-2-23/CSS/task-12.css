@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+body>*{
+    text-align: center;
+}
+.do{
+    background-color: tomato;
+    border-radius:5px 5px 0 5px;
+    position: absolute;
+    height: 28%;
+    width: 18%;
+    top: calc((100vh - 200px)/2);
+    left: calc((100vw - 39%)/2);
+}
+.plan{
+    background-color: lightgreen;
+    border-radius: 5px 5px 5px 0;
+    position: absolute;
+    height: 28%;
+    width: 18%;
+    top: calc((100vh - 200px)/2);
+    left: calc((100vw - 2%)/2);
+
+}
+.delegate{
+    background-color: orange;
+    border-radius:5px 0 5px 5px;
+    position: absolute;
+    height: 28%;
+    width: 18%;
+    right: calc((100vw + 32%)/2);
+    bottom:auto;
+    top: calc((100vh + 20px)/2);
+    left: calc((100vw - 39%)/2);
+}
+.eliminate{
+    background-color: blueviolet;
+    border-radius: 0 5px 5px 5px;
+    position: absolute;
+    height: 28%;
+    width: 18%;
+    right: auto;
+    bottom:auto;
+    top: calc((100vh + 20px)/2);
+    left: calc((100vw - 2%)/2);
+}
+.urgent{
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    background-color: gray;
+    top:calc((100vh - 234px)/2);
+    left:calc((100vw - 36%)/2);
+    border-radius: 5px 5px 0 0;
+}
+.not-urgent{
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    background-color: gray;
+    top:calc((100vh - 234px)/2);
+    left:calc((100vw + 1%)/2);
+    border-radius: 5px 5px 0 0;
+}
+.important{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    background-color: gray;
+    top:calc((100vh - 115px)/2);
+    left:calc((100vw - 51%)/2);
+    border-radius: 5px 5px 0 0;
+}
+.not-important{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    font-size: 13px;
+    background-color: gray;
+    top:calc((100vh + 115px)/2);
+    left:calc((100vw - 51%)/2);
+    border-radius: 5px 5px 0 0;
+}
