@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivsibleBy</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find divisible by </h1>
+    <label>Range From :</label><input id="from" type="text">
+    <label>Range To :</label><input id="to" type="text">
+    <label>Divisible by :</label><input id="divisible" type="text">
+    <input type="submit" onclick="divisibleby()" value="click">
+    <p id="ans"></p>
+    <script>
+        function divisibleby() {
+            //Store value of from in a variable
+            var from = document.getElementById("from").value;
+
+            //Store value of to in a variable
+            var to = document.getElementById("to").value;
+
+            //Store value of divisibleby in a variable
+            var diviBy = document.getElementById("divisible").value;
+
+            //An empty array to store the divisible values
+            var arr = [];
+            for (i = from; i <= to; i++) {
+                if (i % diviBy == 0) {
+                    arr.push(i);
+                }
+            }
+            //display the output values
+            document.getElementById("ans").innerHTML = arr;
+        }
+    </script>
+</body>
+
+</html>
