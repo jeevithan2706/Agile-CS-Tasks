@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 380px;
+            height: 380px;
+            margin: 0 auto;
+        }
+
+        .container>* {
+            width: 97%;
+            height: 97%;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Click the box to see the changes</h3>
+    <div class="container">
+        <div class="colorbox" id="box-one" style="background-color:red ;"></div>
+        <div class="colorbox" id="box-two" style="background-color: blueviolet;"></div>
+        <div class="colorbox" id="box-three" style="background-color: lightgreen;"></div>
+        <div class="colorbox" id="box-four" style="background-color: yellowgreen;"></div>
+    </div>
+    <script>
+        //Declare all the color box in a variable
+        var colors = document.querySelectorAll(".colorbox");
+        for (let i = 0; i < colors.length; i++) {
+            colors[i].addEventListener("click", changeColor)
+        }
+        function changeColor() {
+            colors[0].style.backgroundColor = "red";
+            colors[1].style.backgroundColor = "blueviolet";
+            colors[2].style.backgroundColor = "lightgreen";
+            colors[3].style.backgroundColor = "yellowgreen";
+            this.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>
