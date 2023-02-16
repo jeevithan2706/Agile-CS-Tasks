@@ -37,7 +37,9 @@
     <script>
         //Declare all the color box in a variable
         var colors = document.querySelectorAll(".colorbox");
+        //To find , which colorbox the user click
         for (let i = 0; i < colors.length; i++) {
+        //Change the color of the box when the user clicks the particular colorbox
             colors[i].addEventListener("click", changeColor)
         }
         function changeColor() {
