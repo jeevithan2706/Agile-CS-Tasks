@@ -1,41 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            p{
-                display: inline-flex;
-            }
-        </style>
-    </head>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            display: inline-flex;
+        }
+
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        button {
+            position: absolute;
+            top: calc((100vh - 50px)/2);
+            left: calc((100vw - 100px)/2)
+        }
+    </style>
+</head>
+
 <body>
-<h1>HTML Style Object</h1>
-<h2>The backgroundColor Property</h2>
-<p>Red : <p id="red"></p></p><br>
-<p>Blue : <p id="blue"></p></p><br>
+    <h1>HTML Style Object</h1>
+    <h2>The backgroundColor Property</h2>
+    <p>Red :
+    <p id="red"></p>
+    </p><br>
+    <p>Blue :
+    <p id="blue"></p>
+    </p><br>
+    <p>Pink :
+    <p id="pink"></p>
+    </p><br>
+    <p>Green :
+    <p id="green"></p>
+    </p><br>
+    <p>Yellow :
+    <p id="yellow"></p>
+    </p><br>
+    <p>Gray :
+    <p id="gray"></p>
+    </p><br>
+    <p>Cyan :
+    <p id="cyan"></p>
+    </p><br>
+    <p>Lightgreen :
+    <p id="lightgreen"></p>
+    </p><br>
+    <p>lightblue :
+    <p id="lightblue"></p>
+    </p><br>
+    <p>Violet :
+    <p id="violet"></p>
+    </p><br>
+    <p>Black :
+    <p id="black"></p>
+    </p><br>
 
-<button type="button" onclick="myFunction()">Set background color</button>
+    <button type="button" onclick="myFunction()">Set background color</button>
 
-<script>
-    let colors = ["red","blue","pink","green","yellow","gray","cyan","lightgreen","lightblue","violet","black"];
-    let red = "";
-    var blue = "";
-    var pink = "";
-    var green = "";
-    
-
-function myFunction() {
-    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    let color = document.body.style.backgroundColor;
-    switch(color){
-     case "red":
-        red = red +1 ;
-        document.getElementById("red").innerHTML = red;
-    case "blue":
-        blue = blue.concat(+1);
-        document.getElementById("blue").innerHTML = blue;
-    }
-}
-</script>
+    <script>
+        let colors = ["red", "blue", "pink", "green", "yellow", "gray", "cyan", "lightgreen", "lightblue", "violet", "black"];
+        let arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        function myFunction() {
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            let color = document.body.style.backgroundColor;
+            switch (color) {
+                case "red":
+                    arr[0] = arr[0] + 1;
+                    document.getElementById("red").innerHTML = arr[0];
+                    break;
+                case "blue":
+                    arr[1] = arr[1] + 1;
+                    document.getElementById("blue").innerHTML = arr[1];
+                    break;
+                case "pink":
+                    arr[2] = arr[2] + 1;
+                    document.getElementById("pink").innerHTML = arr[2];
+                    break;
+                case "green":
+                    arr[3] = arr[3] + 1;
+                    document.getElementById("green").innerHTML = arr[3];
+                    break;
+                case "yellow":
+                    arr[4] = arr[4] + 1;
+                    document.getElementById("yellow").innerHTML = arr[4];
+                    break;
+                case "gray":
+                    arr[5] = arr[5] + 1;
+                    document.getElementById("gray").innerHTML = arr[5];
+                    break;
+                case "cyan":
+                    arr[6] = arr[6] + 1;
+                    document.getElementById("cyan").innerHTML = arr[6];
+                    break;
+                case "lightgreen":
+                    arr[7] = arr[7] + 1;
+                    document.getElementById("lightgreen").innerHTML = arr[7];
+                    break;
+                case "lightblue":
+                    arr[8] = arr[8] + 1;
+                    document.getElementById("lightblue").innerHTML = arr[8];
+                    break;
+                case "violet":
+                    arr[9] = arr[9] + 1;
+                    document.getElementById("violet").innerHTML = arr[9];
+                    break;
+                case "black":
+                    arr[10] = arr[10] + 1;
+                    document.getElementById("black").innerHTML = arr[10];
+                    break;
+            }
+        }
+    </script>
 
 </body>
+
 </html>
