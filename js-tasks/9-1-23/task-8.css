@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 90%;
+    height:100%;
+}
+.container{
+    width:100%;
+    height: 100px;
+    background-color: gray;
+    padding:5.5%;
+}
+.keyboard{
+    width: 111%;
+    display: grid;
+    text-align: center;
+}
+.keyboard > *{
+    margin: 0.5%;
+}
+button{
+    background-color:black;
+    color: white;
+    width: 5%;
+    height: 25px;
+    border:none;
+    font-size: 90%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: o.4s;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+.btn{
+    width: 13%;
+}
+.bttn{
+    width: 15%;
+}
+.left{
+    padding-left:1% ;
+    text-align: left;
+}
+.right{
+    padding-right: 1%;
+    text-align: right;
+}
+.numbers > *{
+    margin-left: 0.5%;
+}
+.alphabets-one > *{
+    margin-left: 0.5%;
+}
+.alphabets-two > *{
+    margin-left: 0.5%;
+}
+button:after{
+    content: "";
+    opacity: 0;
+    transition: all 0.8s;
+    display: block;
+    padding-top: 300%;
+    padding-left: 350px;
+    margin-left: -20px !important;
+    margin-top: -120px;
+    background:white ;
+    position: absolute;
+}
+button:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}

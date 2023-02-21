@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task-8.css">
+    <title>Visual Keyboard</title>
+</head>
+<body>
+    <div class="frame">
+        <div id="screen" class="container"></div>
+        <div class="keyboard">
+            <div class="numbers">
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="num">0</button>
+            </div>
+            <div class="alphabets-one">
+                <button class="one">Q</button>
+                <button class="one">W</button>
+                <button class="one">E</button>
+                <button class="one">R</button>
+                <button class="one">T</button>
+                <button class="one">Y</button>
+                <button class="one">U</button>
+                <button class="one">I</button>
+                <button class="one">O</button>
+                <button class="one">P</button>
+            </div>
+            <div class="alphabets-two">
+                <button class="btn left">caps lock</button>
+                <button class="two">A</button>
+                <button class="two">S</button>
+                <button class="two">D</button>
+                <button class="two">F</button>
+                <button class="two">G</button>
+                <button class="two">H</button>
+                <button class="two">J</button>
+                <button class="two">K</button>
+                <button class="two">L</button>
+                <button class="btn right">backspace</button>
+            </div>
+            <div class="alphabets-three">
+                <button class="bttn left">shift</button>
+                <button id="btn">Z</button>
+                <button class="three">X</button>
+                <button class="three">C</button>
+                <button class="three">V</button>
+                <button class="three">B</button>
+                <button class="three">N</button>
+                <button class="three">M</button>
+                <button class="bttn right">enter</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const elements = document.querySelectorAll("button");
+        for(let i = 0; i < elements.length ; i++){
+            elements[i].addEventListener("click" , displayKeyboard)
+        }
+        var displayText = ""
+        function displayKeyboard(){
+            var text = this.innerHTML.toLowerCase();
+            displayText = displayText.concat(text);
+            document.querySelector("#screen").innerHTML = displayText;
+        }
+        for(let i = 0 ; i < elements.length ; i++){
+            if(elements[i].innerHTML.length > 1){
+                elements[30].addEventListener("click" , backspace);
+                elements[39].addEventListener("click" , enter);
+                elements[20].addEventListener("click" , capslock)
+            }
+            else{
+                document.querySelector("#screen").innerHTML = displayText;
+            }
+        }
+        //function for backspace
+        function backspace(){
+            
+        }
+        function enter(){
+            displayText = displayText.concat("<br>");
+            document.querySelector("#screen").innerHTML = displayText;
+        }
+        function capslock(){
+
+        }
+    </script>
+</body>
+</html>
