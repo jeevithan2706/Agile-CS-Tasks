@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --white-color:rgb(255,255,255);
+}
+h1 {
+    letter-spacing: 1ch;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 2%;
+    color: var(--white-color);
+}
+body{
+    color: var(--white-color);
+    background-image: url("./janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+label {
+    width: 20%;
+    display: inline-block;
+}
+.label-right{
+    margin-left: 10%;
+}
+#container label {
+    letter-spacing: 1px;
+    margin-right: 1%;
+    padding: 2px;
+}
+#container {
+    border:1px solid var(--white-color);
+    width: 80%;
+    padding: 2%;
+    background-color: rgba(52, 250, 210, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+button{
+    margin: 1%;
+    width: 150px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0ch;
+    
+}
+a {
+    color: orangered;
+    font-weight: 300;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.5%;
+}
+button{
+    transition: inherit;
+    height: 5%;
+    width: 20%;
+}
+.btn-blue{
+    background-color: rgba(77, 162, 247, 0.5);
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(77, 162, 247, 0.5);
+    color:var(--white-color);
+    margin-left: 21%;
+}
+.btn-orange {
+    background-color: rgba(255, 127, 0, 0.5);
+    border: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 127, 0, 0.5);
+    color: var(--white-color);
+}
+ input{
+    margin: 1%;
+    color: var(--white-color);
+    background-color: rgba(30, 122, 104, 0.03);
+    border:1px solid var(--white-color);
+    padding: 2px;
+    width: 20%;
+}
+input::placeholder {
+    padding-left: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color:var(--white-color);
+}
+.address-input {
+    width: 75%;
+    padding-left: 0%;
+}
+.num-code {
+    width: 3%;
+}
+.num {
+    width: 15%;
+    margin-left: 4px;
+}
